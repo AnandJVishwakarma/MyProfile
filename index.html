@@ -1,716 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="my portfolio website to showcase the work I have done so far, the services I provide and all my professionals life.">
-  <title>Anand Vishwakarma | Portfolio</title>
-  <link rel="icon" type="image/png" href="images/favIcon-v2.png"/>
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Anand Vishwakarma</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    
+    <link href="assets/img/favIcon.png" rel="icon">
+    <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
 
-  <link rel="stylesheet" href="css/style.css" />
-</head>
 
-<body>
-  <header class="header">
-   <h3>Developer { }</h3>
-    <nav class="navbar">
-      <ul class="navbar-lists">
-        <li><a class="navbar-link home-link" href="#">Home</a></li>
-        <li><a class="navbar-link about-link" href="/about.html">About</a></li>
-        <li><a class="navbar-link service-link" href="/service.html">Services</a></li>
-        <li><a class="navbar-link portfolio-link" href="#portfolio-section">Portfolio</a></li>
-        <li>
-          <a class="navbar-link" href="/contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+        <!-- <h1 class="logo"><a href="index.html">Anand Vishwakarma</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html" class="logo"><img src="assets/img/favIcon.png" alt="" class="img-fluid"></a>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <!-- <li><a class="nav-link scrollto " href="#work">Work</a></li> -->
+            <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+            <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li> -->
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
 
-    <div class="mobile-navbar-btn">
-      <ion-icon class="mobile-nav-icon" name="menu-outline" class="mobile-nav-icon"></ion-icon>
-
-      <ion-icon class="mobile-nav-icon" name="close-outline" class="mobile-nav-icon"></ion-icon>
-    </div>
-  </header>
-
-  <!-- ======================================== 
-          Our Main Hero Section Start  
-    ========================================  -->
-  <main>
-    <section class="section-hero section">
-      <div class="container grid grid-two-col">
-        <div class="section-hero-data">
-          <p class="hero-top-data">this is me</p>
-          <h1 class="hero-heading">Anand Vishwakarma</h1>
-          <p class="hero-para">
-            A Software Developer and freelancer.
-            I am the one of them who can develop your thoughts into the real world application.
-          </p>
-          <!-- <div>
-            <a href="#" target="_blank" class="btn hireme-btn">Hire Me</a>
-          </div> -->
-        </div>
-
-        <div class="section-hero-image">
-          <img src="images/hero.jpg" alt="hero image" class="hero-img" />
-        </div>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
       </div>
-    </section>
-  </main>
+    </header>
+    <!-- End Header -->
 
-  <!-- ======================================== 
-           Bio Data Section Start  
-    ========================================  -->
-  <section class="section-biodata section">
-    <div class="container grid grid-two-col">
-      <div class="bio-image">
-        <img src="images/biodata.jpg" alt="bio data image" />
-      </div>
-      <div class="bio-data">
-        <h2 class="common-heading">my bio-data</h2>
-        <p>
-          I am a highly skilled and experienced Full Stack Web Developer with a passion for creating robust and
-          user-friendly web applications. With a comprehensive understanding of both front-end and back-end
-          technologies, I specialize in developing end-to-end solutions that meet client needs. My expertise encompasses
-          a wide range of programming languages, frameworks, and databases, enabling me to deliver high-quality and
-          scalable web applications.
-        </p>
-        <!-- <div class="bio-data-stats">
-          <div class="bio-stats">
-            <h3>Design</h3>
-            <div class="bio-progress-bar">
-              <span>80%</span>
-            </div>
-          </div>
-          <div class="bio-stats">
-            <h3>HTML</h3>
-            <div class="bio-progress-bar bio-progress-2">
-              <span>99%</span>
-            </div>
-          </div>
-          <div class="bio-stats">
-            <h3>CSS</h3>
-            <div class="bio-progress-bar bio-progress-3">
-              <span>90%</span>
-            </div>
-          </div>
-          <div class="bio-stats">
-            <h3>JavaScript</h3>
-            <div class="bio-progress-bar bio-progress-4">
-              <span>85%</span>
-            </div>
-          </div>
-          <div class="bio-stats">
-            <h3>MERN</h3>
-            <div class="bio-progress-bar bio-progress-5">
-              <span>70%</span>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="bio-data-btn">
-          <a href="#" class="btn"
-            download> Downlaod CV </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================== 
-        Portfolio works Section Start  
-    ========================================  -->
-  <section class="section-portfolio section " id="portfolio-section">
-    <div class="container">
-      <h2 class="common-heading">Latest works</h2>
-      <p>
-        In my latest work, I have successfully delivered projects that have met clients' expectations and exceeded their
-        business goals. I continuously refine my skills to deliver innovative and
-        high-performance web solutions.
-      </p>
-    </div>
-
-    <!-- <div class="p-btns">
-      <button class="btn p-btn " data-btn-num="1">Websites</button>
-      <button class="btn p-btn " data-btn-num="2">Youtube </button>
-      <button class="btn p-btn " data-btn-num="3">Design</button>
-    </div> -->
-
-    <div class="container grid grid-three-col portfolio-images">
-      <div class="img-ovelay p-btn--1">
-        <img src="images/folio/1.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="http://charcounter.thapaonlineclass.com/" target="_blank" class="common-heading">Project 1</a>
-        </div>
-      </div>
-
-      <div class="img-ovelay p-btn--3">
-        <img src="images/folio/4.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="https://www.thapatechnical.com/" target="_blank" class="common-heading">Project 2</a>
-        </div>
-      </div>
-
-      <div class="img-ovelay p-btn--1">
-        <img src="images/folio/3.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="" target="_blank" class="common-heading">Project 3</a>
-        </div>
-      </div>
-      <!-- <div class="img-ovelay p-btn--1 p-btn--2">
-        <img src="images/folio/4.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="" target="_blank" class="common-heading">Project 4</a>
-        </div>
-      </div>
-      <div class="img-ovelay p-btn--2">
-        <img src="images/folio/5.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="" target="_blank" class="common-heading">Project 5</a>
-        </div>
-      </div>
-      <div class="img-ovelay p-btn--1">
-        <img src="images/folio/1.jpg" loading="lazy" alt="portfolio images " />
-        <div class="overlay">
-          <a href="" target="_blank" class="common-heading">Project 6</a>
-        </div>
-      </div> -->
-    </div>
-  </section>
-
-  <!-- ======================================== 
-          work completed counter section Start  
-    ========================================  -->
-
-  <section class="section-work-data section ">
-    <div class="container grid grid-four-col">
-      <div>
-        <h2 data-number="0" class="counter-numbers">0</h2>
-        <p>project completed</p>
-      </div>
-      <div>
-        <h2 data-number="0" class="counter-numbers">0+</h2>
-        <p>Happy clients</p>
-      </div>
-      <div>
-        <h2 data-number="0" class="counter-numbers">0+</h2>
-        <p>cups of coffee</p>
-      </div>
-      <div>
-        <h2 data-number="0" class="counter-numbers">0+</h2>
-        <p>real professionals</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================================== 
-          Our Service Section Start  
-    ========================================  -->
-  <section class="section-services section section--hidden">
-    <div class="container">
-      <h2 class="common-heading">Service Offers</h2>
-      <p>
-        These are the some services mentioned below which we provide to our customers
-      </p>
-    </div>
-
-    <div class="container grid grid-three-col">
-      <div class="service-box">
-        <ion-icon name="logo-react" class="serive-icon"></ion-icon>
-        <h3>web development</h3>
-        <p>
-          We offer comprehensive web development services, providing tailor-made solutions to meet our customers' unique
-          needs.
-        </p>
-      </div>
-
-      <div class="service-box">
-        <ion-icon class="serive-icon" name="grid-outline"></ion-icon>
-        <h3>Mobile App</h3>
-        <p>
-          We specialize in mobile app development, creating customized solutions that deliver seamless user experiences
-          across iOS and Android platforms.
-        </p>
-      </div>
-
-      <div class="service-box">
-        <ion-icon class="serive-icon" name="rocket-outline"></ion-icon>
-        <h3>DevOps</h3>
-        <p>
-          DevOps services will automate the manual process and smoothen the development & deployment process in Agile life-cycle. 
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ======================================== 
-          Our Resume Section Start  
-    ========================================  -->
-  <section class="section-resume section ">
-    <div class="container grid grid-two-col">
-      <!-- resume left side  -->
-      <div class="resume-img">
-        <img src="images/lazy1.jpg" alt="my resume pic" data-src="images/biodata.jpg" loading="lazy" class="lazy-img" />
-      </div>
-
-      <!-- resume right side  -->
-      <div class="resume-data">
-        <h2 class="common-heading">resume</h2>
-        <p class="resume-para">my work experience</p>
-
-        <div class="resume-data-subsection">
-          <div class="resume-data-left">
-            <h3>Solution Lead</h3>
-            <div class="grid grid-two-col">
-              <p>
-                <ion-icon name="business-outline"></ion-icon> Sankey Business Solutions
-              </p>
-              <p>
-                <ion-icon name="location-outline"></ion-icon> Mumbai, India
-              </p>
-            </div>
-          </div>
-
-          <div class="resume-data-right">
-            <p class="resume-data-button">fulltime</p>
-            <p>
-              <ion-icon name="calendar-outline"></ion-icon> <span>Jan 2021 - Present </span>
-            </p>
+    <!-- ======= Hero Section ======= -->
+    <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.png)">
+      <!-- <div id="hero" class="hero route"> -->
+      <div class="overlay-itro"></div>
+      <div class="hero-content display-table">
+        <div class="table-cell">
+          <div class="container">
+            <!--<p class="display-6 color-d">Hello, world!</p>-->
+            <h1 class="hero-title mb-4">I am Anand Vishwakarma</h1>
+            <p class="hero-subtitle"><span class="typed" data-typed-items="Data Scientist, Backend Developer, DevOps Engineer, Freelancer"></span></p>
+            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
           </div>
         </div>
+      </div>
+    </div><!-- End Hero Section -->
 
-        <!-- 2nd work experience  -->
-        <!-- <div class="resume-data-subsection">
-          <div class="resume-data-left">
-            <h3>Senior Front End Developer</h3>
-            <div class="grid grid-two-col">
-              <p>
-                <ion-icon name="business-outline"></ion-icon> Facebook, Inc.
-              </p>
-              <p>
-                <ion-icon name="location-outline"></ion-icon> San Francisco
-              </p>
-            </div>
-          </div>
+    <main id="main">
 
-          <div class="resume-data-right">
-            <p class="resume-data-button">fulltime</p>
-            <p>
-              <ion-icon name="calendar-outline"></ion-icon> November 2021 -
-              Present
-            </p>
-          </div>
-        </div> -->
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="row">
+                      <!-- <div class="col-sm-6 col-md-5"> -->
+                        <div class="about-img">
+                          <img src="assets/img/my-profile.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                          <!-- <img src="assets/img/my-profile.jpg" class="img-fluid rounded b-shadow-a" alt=""> -->
+                        </div>
+                      <!-- </div> -->
+                      <!-- <div class="col-sm-6 col-md-7">
+                        <div class="about-info">
+                          <p><span class="title-s">Name: </span> <span>Anand Vishwakarma</span></p>
+                          <p><span class="title-s">Profile: </span> <span>Problem Solver | Innovator | Engineer</span></p>
+                          <p><span class="title-s">Email: </span> <span>anand.j.vishwakarma@gmail.com</span></p>
+                          <p><span class="title-s">Phone: </span> <span>(+91) 7715009144</span></p>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about-me pt-4 pt-md-0">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          About me
+                        </h5>
+                      </div>
+                      <p class="lead">
+                        With 3 years of experience, I am a resolute professional known for excelling in backend development, DevOps, team leadership, and architectural design and implementation. 
+                      </p>
+                      <p class="lead">
+                        My focus is on achieving technological excellence, fostering collaboration, and delivering impactful results for projects and organizations by crafting robust and scalable architectures.
+                      </p>
 
-        <!-- 3rd work experience  -->
-        <!-- <div class="resume-data-subsection">
-          <div class="resume-data-left">
-            <h3>Senior Front End Developer</h3>
-            <div class="grid grid-two-col">
-              <p>
-                <ion-icon name="business-outline"></ion-icon> Facebook, Inc.
-              </p>
-              <p>
-                <ion-icon name="location-outline"></ion-icon> San Francisco
-              </p>
-            </div>
-          </div>
-
-          <div class="resume-data-right">
-            <p class="resume-data-button">fulltime</p>
-            <p>
-              <ion-icon name="calendar-outline"></ion-icon>November 2021 -
-              Present
-            </p>
-          </div>
-        </div> -->
-
-        <!-- 4th work experience  -->
-        <!-- <div class="resume-data-subsection">
-          <div class="resume-data-left">
-            <h3>Senior Front End Developer</h3>
-            <div class="grid grid-two-col">
-              <p>
-                <ion-icon name="business-outline"></ion-icon> Facebook, Inc.
-              </p>
-              <p>
-                <ion-icon name="location-outline"></ion-icon> San Francisco
-              </p>
-            </div>
-          </div>
-
-          <div class="resume-data-right">
-            <p class="resume-data-button">fulltime</p>
-            <p>
-              <ion-icon name="calendar-outline"></ion-icon>November 2021 -
-              Present
-            </p>
-          </div>
-        </div> -->
-
-        <!-- Education section  -->
-        <div class="resume-data-bottom-subsection">
-          <p class="resume-para">Education</p>
-
-          <!-- 1st college  -->
-          <!-- <div class="resume-data-subsection margin-small">
-            <div class="resume-data-left">
-              <h3>Master in Computer Science</h3>
-              <div class="grid grid-two-col">
-                <p>
-                  <ion-icon name="business-outline"></ion-icon> Wadia College, Inc.
-                </p>
-                <p>
-                  <ion-icon name="location-outline"></ion-icon> Pune, MH
-                </p>
+                      <p><span class="lead title-s">Name: </span> <span class="lead">Anand Vishwakarma</span></p>
+                      <p><span class="lead title-s">Profile: </span> <span class="lead">Problem Solver | Innovator | Engineer</span></p>
+                      <p><span class="lead title-s">Email: </span> <span class="lead">anand.j.vishwakarma@gmail.com</span></p>
+                      <p><span class="lead title-s">Phone: </span> <span class="lead">(+91) 7715009144</span></p>
+                      <div class="socials">
+                        <ul>
+                          <li><a href="https://www.linkedin.com/in/anand-vishwakarma-20389519a/"><span class="ico-circle"><i class="bi bi-linkedin" style="font-size: 50px;"></i></span></a></li>
+                          <li><a href="https://github.com/AnandJVishwakarma"><span class="ico-circle"><i class="bi bi-github" style="font-size: 50px;"></i></span></a></li>
+                          <li><a href="https://www.instagram.com/__anandvishwakarma__/"><span class="ico-circle"><i class="bi bi-instagram" style="font-size: 50px;"></i></span></a></li>
+                          <li><a href="https://www.youtube.com/channel/UChSyy1cM2fT2eyaso9G2I6Q"><span class="ico-circle"><i class="bi bi-youtube" style="font-size: 50px;"></i></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section><!-- End About Section -->
 
-            <div class="resume-data-right">
-              <p class="resume-data-button"> Masters</p>
-              <p>
-                <ion-icon name="calendar-outline"></ion-icon> <span>May 2016 - 2018 </span>
-              </p>
-            </div>
-          </div> -->
-
-          <!-- 2nd college  -->
-          <div class="resume-data-subsection ">
-            <div class="resume-data-left">
-              <h3>Master in Data Science & Big Data Analytics</h3>
-              <!-- <div class="grid grid-two-col"> -->
-                <p>
-                  <ion-icon name="business-outline"></ion-icon> B.K. Birla College of Arts, Science & Commerce
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services-mf pt-5 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Services
+                </h3>
+                <p class="subtitle-a">
+                  
                 </p>
-                <p>
-                  <ion-icon name="location-outline"></ion-icon> Thane, Maharashtra, India
+                <div class="line-mf"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-cloud"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">DevOps</h2>
+                  <p class="s-description text-center">
+                    I excel in implementing DevOps practices to streamline software development and deployment processes. From establishing robust CI/CD pipelines to automating infrastructure provisioning, my expertise ensures accelerated delivery cycles, enhanced collaboration between development and operations teams, and the overall reliability of software systems.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-database-check"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Data Engineering</h2>
+                  <p class="s-description text-center">
+                    My specialization in data engineering revolves around crafting efficient and scalable data pipelines. I design and implement solutions for data ingestion, processing, and storage, ensuring the availability and accuracy of data. Whether it's optimizing ETL workflows or architecting data warehouses, I bring a data-centric approach to empower businesses with actionable insights.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-box">
+                <div class="service-ico">
+                  <span class="ico-circle"><i class="bi bi-gear"></i></span>
+                </div>
+                <div class="service-content">
+                  <h2 class="s-title">Backend Engineering</h2>
+                  <p class="s-description text-center">
+                    As a backend expert, I focus on building resilient & high-performance server-side architectures. From designing RESTful APIs to implementing database solutions, my skills contribute to the creation of robust solutions. I prioritize scalability, security, and maintainability, delivering solutions that seamlessly integrate with frontend applications and provide a solid foundation for overall system functionality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Counter Section ======= -->
+      <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-ui-checks"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="counter purecounter"></p>
+                  <span class="counter-text">WORKS COMPLETED</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="counter purecounter"></p>
+                  <span class="counter-text">YEARS OF EXPERIENCE</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-people"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="counter purecounter"></p>
+                  <span class="counter-text">TOTAL CLIENTS</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+              <div class="counter-box pt-4 pt-md-0">
+                <div class="counter-ico">
+                  <span class="ico-circle"><i class="bi bi-substack"></i></span>
+                </div>
+                <div class="counter-num">
+                  <p data-purecounter-start="0" data-purecounter-end="48" data-purecounter-duration="1" class="counter purecounter"></p>
+                  <span class="counter-text">TOTAL BLOGS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Counter Section -->
+
+      <!-- ======= Blog Section ======= -->
+      <section id="blog" class="blog-mf sect-pt4 route">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="title-box text-center">
+                <h3 class="title-a">
+                  Blog
+                </h3>
+                <p class="subtitle-a">
+                  Comming Soon ...
                 </p>
-              <!-- </div> -->
-            </div>
-
-            <div class="resume-data-right">
-              <p class="resume-data-button"> Masters </p>
-              <p>
-                <ion-icon name="calendar-outline"></ion-icon> <span>June 2021- July 2023 </span>
-              </p>
+                <div class="line-mf"></div>
+              </div>
             </div>
           </div>
-          <!-- end  -->
-
-          <!-- 1nd college  -->
-          <div class="resume-data-subsection ">
-            <div class="resume-data-left">
-              <h3>Bachelor in Information Technology</h3>
-              <!-- <div class="grid grid-two-col"> -->
-                <p>
-                  <ion-icon name="business-outline"></ion-icon> B.K. Birla College of Arts, Science & Commerce
-                </p>
-                <p>
-                  <ion-icon name="location-outline"></ion-icon> Thane, Maharashtra, India
-                </p>
-              <!-- </div> -->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="#"><img src="assets/img/coming-soon.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">DevOps</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="#">See more concepts of DevOps</a></h3>
+                  <p class="card-description">
+                    This blog section includes all the articles and posts related to DevOps tools & technologies.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="post-author">
+                    <a href="#">
+                      <img src="assets/img/my-profile.jpg" alt="" class="avatar rounded-circle">
+                      <span class="author">Anand Vishwakarma</span>
+                    </a>
+                  </div>
+                  <div class="post-date">
+                    <span class="bi bi-clock"></span> 10 min
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="resume-data-right">
-              <p class="resume-data-button"> Bachelor's </p>
-              <p>
-                <ion-icon name="calendar-outline"></ion-icon> <span>June 2017- Oct 2020 </span>
-              </p>
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="#"><img src="assets/img/coming-soon.jpg" alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Data Engineering</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="#">Learn more about Data Engineering</a></h3>
+                  <p class="card-description">
+                    This blog section includes all the articles and posts related to Data Engineering tools & technologies.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="post-author">
+                    <a href="#">
+                      <img src="assets/img/my-profile.jpg" alt="" class="avatar rounded-circle">
+                      <span class="author">Anand Vishwakarma</span>
+                    </a>
+                  </div>
+                  <div class="post-date">
+                    <span class="bi bi-clock"></span> 10 min
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="#"><img src="assets/img/coming-soon.jpg"x alt="" class="img-fluid"></a>
+                </div>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category">Web Design</h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title"><a href="#">Recent trends in Data Science</a></h3>
+                  <p class="card-description">
+                     This includes all the articles and posts related to trending tools & technologies in Data Science.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <div class="post-author">
+                    <a href="#">
+                      <img src="assets/img/my-profile.jpg" alt="" class="avatar rounded-circle">
+                      <span class="author">Anand Vishwakarma</span>
+                    </a>
+                  </div>
+                  <div class="post-date">
+                    <span class="bi bi-clock"></span> 10 min
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- end  -->
+        </div>
+      </section><!-- End Blog Section -->
 
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="contact-mf">
+                <div id="contact" class="box-shadow-full">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                          Send me a message
+                        </h5>
+                      </div>
+                      <div>
+                        <form action="https://formspree.io/f/mbjvnadq" method="post" role="form" class="php-email-form">
+                          <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="text" name="username" class="form-control" id="username" placeholder="Your Name" required>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12 text-center my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                              <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="title-box-2 pt-4 pt-md-0">
+                        <h5 class="title-left">
+                          Get in Touch
+                        </h5>
+                      </div>
+                      <div class="more-info">
+                        <!-- <p class="lead">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                          expedita aperiam aliquid at.
+                          Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                          mollitia inventore?
+                        </p> -->
+                        <ul class="list-ico">
+                          <li class="lead"><span class="bi bi-geo-alt"></span> Thane, Maharashtra, India</li>
+                          <li class="lead"><span class="bi bi-phone"></span> (+91) 7715009144</li>
+                          <li class="lead"><span class="bi bi-envelope"></span> anand.j.vishwakarma@gmail.com</li>
+                        </ul>
+                      </div>
+                      <div class="socials">
+                        <ul>
+                          <li><a href="https://www.linkedin.com/in/anand-vishwakarma-20389519a/"><span class="ico-circle"><i class="bi bi-linkedin" style="font-size: 50px;"></i></span></a></li>
+                          <li><a href="https://github.com/AnandJVishwakarma"><span class="ico-circle"><i class="bi bi-github" style="font-size: 50px;"></i></span></a></li>
+                          <li><a href="https://www.instagram.com/_anandvishwakarma_?igshid=ODA1NTc50Tg5Nw=="><span class="ico-circle"><i class="bi bi-instagram" style="font-size: 50px;"></i></span></a></li>
+                          <li><a href="https://www.youtube.com/channel/UChSyy1cM2fT2eyaso9G2I6Q"><span class="ico-circle"><i class="bi bi-youtube" style="font-size: 50px;"></i></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Contact Section -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p>Copyright ©2023 Anand Vishwakarma, All rights reserved</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
+    <!-- End  Footer -->
 
-  </section>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-  <!-- ======================================== 
-          Our Testimonial Section Start  
-    ========================================  -->
-
-  <section class="section section-testimonial ">
-    <div class="container">
-      <h2 class="common-heading">Happy Client works</h2>
-    </div>
-    <!-- Slider main container -->
-    <!-- Swiper -->
-    <div class="swiper mySwiper container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-
-          <div class="swiper-client-msg">
-            <p>Exceptional web development services! The team delivered exactly what we envisioned, with attention to detail and seamless functionality." - John D.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-              <img loading="lazy" src="images/clients/a.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p>John David</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div>
-        <!-- slide end  -->
-        <!-- <div class="swiper-slide">
-
-          <div class="swiper-client-msg">
-            <p>"The mobile app developed by them exceeded our expectations. It's user-friendly, visually appealing, and has helped boost our business significantly." - Sarah M.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-              <img loading="lazy" src="images/clients/b.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p>Sarah Milson</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- slide end  -->
-        <!-- <div class="swiper-slide">
-
-          <div class="swiper-client-msg">
-            <p>"Their photo editing services transformed our images into works of art. The attention to detail and creative enhancements truly impressed us." - Michael R.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-              <img loading="lazy" src="images/clients/c.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p>Michael Richard</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- slide end  -->
-        <!-- <div class="swiper-slide">
-
-          <div class="swiper-client-msg">
-            <p>"We are extremely satisfied with their prompt and professional service. They listened to our needs and delivered a top-notch website that perfectly represents our brand." - Jason S.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-              <img loading="lazy" src="images/clients/d.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p>Jason Sion</p>
-              <p>Entrepruner</p>  
-            </div>
-          </div>
-        </div> -->
-        <!-- slide end  -->
-        <!-- <div class="swiper-slide">
-
-          <div class="swiper-client-msg">
-            <p>"Their web development team showcased exceptional technical skills and provided reliable support throughout the project. Highly recommended!" - Emily W.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-              <img src="images/clients/e.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p>Emily Wilson</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- slide end  -->
-        <!-- <div class="swiper-slide">
-
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we
-              think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-              <img src="images/clients/f.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p>Vinod thapa</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- slide end  -->
-        <!-- <div class="swiper-slide">
-
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we
-              think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-              <img src="images/clients/g.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p>Vinod thapa</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- slide end  -->
-        <!-- <div class="swiper-slide">
-
-          <div class="swiper-client-msg">
-            <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we
-              think faster than we speak. Hobbes: Probably so we can think twice.</p>
-          </div>
-          <div class="swiper-client-data grid grid-two-col ">
-            <figure>
-              <img src="images/clients/h.jpg" alt="">
-            </figure>
-            <div class="client-data-details">
-              <p>Vinod thapa</p>
-              <p>Entrepruner</p>
-            </div>
-          </div>
-        </div> -->
-        <!-- slide end  -->
-
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-    </div>
-  </section>
-
-  <!-- ======================================== 
-         freelancing Section   
-    ========================================  -->
-
-  <section class="section section-freelancer ">
-    <div class="overlay"></div>
-    <div class="container">
-      <h2>I am <span> available </span> for freelancing</h2>
-      <p>I am available for freelance work on popular platforms, offering my expertise in web development and delivering high-quality solutions.</p>
-      <!-- <a href="/contact.html" class="btn"> HIRE ME </a> -->
-    </div>
-  </section>
-
-  <!-- ======================================== 
-          Our  Cotnact Us Section   
-    ========================================  -->
-
-  <section class="section section-contact ">
-    <div class="container">
-      <h2 class="common-heading">contact us</h2>
-    </div>
-
-    <div class="section-contact-main contact-container">
-      <form action="https://formspree.io/f/mbjvnadq" method="POST">
-        <div class=" grid grid-two-col">
-          <input type="text" name="username" id="" required placeholder="Name">
-          <input type="email" name="email" required placeholder="Email" autocomplete="false">
-        </div>
-        <div>
-          <input type="text" name="subject" placeholder="Subject">
-        </div>
-        <div>
-          <textarea name="message" id="" placeholder="Message"></textarea>
-        </div>
-
-        <div>
-          <input type="submit" value="send message" class="btn">
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- ======================================== 
-          Our footer Section   
-    ========================================  -->
-
-  <footer class="section section-footer ">
-    <div class="container grid grid-four-col">
-      <div class="f-about">
-        <h3>About</h3>
-        <p>I am a Solution Lead who can solve your business problems in a technical way.</p>
-      </div>
-
-      <div class="f-links">
-        <h3>Links</h3>
-        <ul>
-          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">home</a></li>
-          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">about</a></li>
-          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">services</a></li>
-          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">portfolio</a></li>
-
-          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">contact</a></li>
-        </ul>
-      </div>
-
-      <div class="f-services">
-        <h3>Services</h3>
-        <ul>
-          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">web development</a></li>
-          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Mobile development</a></li>
-          <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">DevOps</a></li>
-        </ul>
-      </div>
-
-      <div class="f-address">
-        <h3>Have a Questions?</h3>
-        <address>
-          <div>
-            <p> <span><ion-icon name="location-outline"></ion-icon></span> Thane, Maharashtra, India </p>
-          </div>
-
-          <div>
-            <p class="flex-center"> <span><ion-icon name="call-outline"></ion-icon></span> <a class="color-white" href="tel:+917715009144"> +91 7715009144 </a>
-            </p>
-          </div>
-
-          <div>
-            <p class="flex-center"> <span><ion-icon name="mail-outline"></ion-icon></span> <a class="color-white" href="mailto:anand.j.vishwakarma@gmail.com">
-              anand.j.vishwakarma@gmail.com  </a> </p>
-          </div>
-        </address>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="f-social-icons">
-        <a href="https://github.com/AnandJVishwakarma" target="_blank">
-          <ion-icon class="icons" name="logo-github"></ion-icon>
-        </a>  
-
-        <a href="https://www.instagram.com/__anandvishwakarma__/" target="_blank">
-          <ion-icon class="icons" name="logo-instagram"></ion-icon>
-        </a>
-
-        <a href="https://www.youtube.com/channel/UChSyy1cM2fT2eyaso9G2I6Q" target="_blank">
-          <ion-icon class="icons" name="logo-youtube"></ion-icon>
-        </a>
-
-      </div>
-
-      <div class="f-credits">
-        <p>Copyright ©2023 All rights reserved</p>
-      </div>
-    </div>
-
-  </footer>
-
-
-
-  <!-- ======================================== 
-          Our JavaScript Section   
-    ========================================  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="index.js"></script>
-</body>
+  </body>
 
 </html>
